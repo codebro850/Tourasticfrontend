@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <!-- <link rel="stylesheet" href="owl.carousel.min.css">
+        <link rel="stylesheet" href="owl.theme.default.min.css"> -->
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Tourastic - Home</title>
+</head>
+
+<body>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <img src="logos/short-logo.png" width="45" height="40" class="d-inline-block align-top" alt="">
+        <img src="logos/logo-name.png" width="90" height="30" class="d-inline-block align-top" alt="">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon" style="background-color: white;"></span> -->
+            <div class="navbar-toggle"></div>
+            <div class="navbar-toggle"></div>
+            <div class="navbar-toggle"></div>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item active ml-auto">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tour Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Flights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: black;">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+        </div>
+    </nav>
+    <img src="images/dubai-1767540_1920.jpg" alt="" width="100%" height="500px">
+
+    <div class="title-search">
+        <h1>A Destination</h1>
+        <h2>For The New Millinium...</h2>
+
+
+
+        <form>
+            <div class="form-row align-items-center fixedElement">
+                <div class="col-auto">
+                    <!-- <input type="text" class="" id="inlineFormInput" placeholder="Jane Doe"> -->
+
+                    <input class="form-control mb-2" id="inlineFormElement" placeholder="Enter Destination" type="text"
+                        list="FavoriteColor" id="color" name="color">
+                    <datalist id="FavoriteColor">
+                        <option value="Kashmir">
+                        <option value="Bali">
+                        <option value="Bhutan">
+                        <option value="Dubai">
+                        <option value="Goa">
+                        <option value="Gujarat">
+                        <option value="Himachal Pradesh">
+                        <option value="Kerala">
+                        <option value="North East">
+                        <option value="Thailand">
+                    </datalist>
+
+                </div>
+
+                <div class="col-auto">
+                    <input type="text" onfocus="(this.type='Date')" class="form-control mb-2" id="inlineFormInput"
+                        placeholder="Starting Date">
+                </div>
+
+                <div class="col-auto">
+                    <input type="text" onfocus="(this.type='Date')" class="form-control mb-2" id="inlineFormInput"
+                        placeholder="End Date">
+                </div>
+
+                <div class="col-auto">
+
+                    <input class="form-control mb-2" id="inlineFormInput" placeholder="Enter Budget" type="text"
+                        list="budget" name="price">
+                    <datalist id="budget">
+                        <option value="Rs. 40,000 - 50,000">
+                        <option value="Rs. 50,000 - 60,000">
+                        <option value="Rs. 60,000 - 70,000">
+                        <option value="Rs. 70,000 - 80,000">
+                        <option value="Rs. 80,000 - 90,000">
+                        <option value="Rs. 90,000 - 1,00,000">
+                        <option value="Rs. 1,00,000 - 1,20,000">
+                        <option value="Rs. 1,20,000 - 1,40,000">
+                        <option value="Rs. 1,40,000 - 1,60,000">
+                        <option value="Rs. 1,60,000 - 2,00,000">
+                    </datalist>
+
+                </div>
+
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <section class="section2">
+
+        <div class="flex-container">
+            <div class="flex-item-left">
+
+                <img class="img-flex" src="images/location.png" alt="">
+                <h4 class="flex-img-title">Top Destinations</h4>
+                <h5 class="flex-img-detail">We have Best Destinations to visit</h5>
+            </div>
+
+            <div class="flex-item-left">
+
+                <img class="img-flex" src="images/customer.png" alt="">
+                <h4 class="flex-img-title">96% Happy Travelers</h4>
+                <h5 class="flex-img-detail">A feast we are really proud to present.</h5>
+            </div>
+
+            <div class="flex-item-left">
+
+
+                <img class="img-flex" src="images/tour-guide.png" alt="">
+                <h4 class="flex-img-title">100+ Guides</h4>
+                <h5 class="flex-img-detail">We have an extensive local network of guides.</h5>
+            </div>
+        </div>
+    </section>
+
+    <div class="carousel-wrap">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=1" />
+                <span class="img-text">nightlife</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=2" />
+                <span class="img-text">abstract</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=3" />
+                <span class="img-text">animals</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=4" />
+                <span class="img-text">nature</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=5" />
+                <span class="img-text">business</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=6" />
+                <span class="img-text">cats</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=7" />
+                <span class="img-text">city</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=8" />
+                <span class="img-text">food</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=9" />
+                <span class="img-text">fashion</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=10" />
+                <span class="img-text">people</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=11" />
+                <span class="img-text">sports</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=12" />
+                <span class="img-text">technics</span>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/640/480?pic=13" />
+                <span class="img-text">transport</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    <script src="js/jquery.js"></script>
+    <!-- bootjs -->
+    <script src="js/bootstrap.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <!-- <script src="jquery.min.js"></script>
+    <script src="owl.carousel.js"></script> -->
+    
+
+
+</body>
+
+<script>
+
+    $('.owl-carousel').owlCarousel({
+        margin: 10,
+        nav: true,
+        navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+    </script>
+</html>
